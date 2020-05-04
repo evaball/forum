@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("rc2s.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+    position: absolute;
+    top: 45%;
+    left: 13%;
+    transform: translate(-50%, -50%) ;
+    box-sizing: border-box;
+    background-color:  rgb(5, 30, 0);
+    padding: 50px;
+    border-radius: 80px;
+    border: 1px solid #fff;
+    width: 26%;
+}
+
+
+.titre{
+    margin: 0;
+    padding: 0 0 20px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   font-family: 'Playfair Display', serif;
+ 
+}
+.form p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+.form input, select{
+    margin-bottom: 10px;
+    width: 50%;
+}
+.form input[type=text] , .form input[type=email]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    display: 16px;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+}
+
+.form select{
+    margin-top: 20px;
+    padding: 10px, 0;
+
+}
+.form input[type=submit]{
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

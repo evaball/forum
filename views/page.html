@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title></title>
+    <!-- importer le fichier de style -->
+     <link rel="stylesheet" href="page.css" media="screen" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i&display=swap" rel="stylesheet">
+     
+   </head>
+   <body>
+       <div class="form">
+           <h3 class="titre">Inscription</h3>
+           <form action="##" method="post">
+               <p>Nom :</p>
+               <input type="text" name="nom" id="nom" placeholder="Saissir votre nom" required> 
+               <p>Prénom :</p>
+               <input type="text" name="prenom" id="prenom"  placeholder="Saissir votre prénom"  required>
+               <p>Adresse E-mail :</p>
+               <input type="email" name="mail" id="mail" placeholder="Saissir votre adresse e-mail"  required>
+               <p>Quel est votre rôle ?</p>
+               <select name="rôle" id="rôle">
+                   <option value="user">User</option>
+                   <option value="admin">Admin</option>
+                   <option value="super_admin">Super_admin</option>
+          </select>
+          <p>Statut :</p>
+        <input type="text" name="statut" id="statut" placeholder="Saissir votre statut"  required>
+        <br><br>
+          <input type="submit" value="Valider">
+        </form>
+       </div>
+</body>
+</html>
