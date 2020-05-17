@@ -1,117 +1,63 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
-	<title>Profil</title>
-	<link rel="stylesheet" type="text/css" href="dist/style.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dist/img/rcss.png">
+    <link rel="stylesheet" href="dist/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/offcanvas/">
+    <link rel="stylesheet" href="dist/css/offcanvas.css">
+    <title>Profil</title>
 </head>
 <body>
-	<div class="profile-main">
-		<div class="profile-header">
-			<div class="user-detail">
-				<div class="user-image">
-					<img src="dist/img/daooda.jpg">
-				</div>
-				<div class="user-data">
-					<h2>Daooda BA</h2>
-					<span class="post-label">@daooda</span>
-					<p>Etudiant à <strong>Sonatel Academy</strong><br>
-					<i class="fa fa-map-marker" aria-hidden="true"></i>  Sénégal, DK, Guédiawaye
-					</p>
-				</div>
-			</div>
-			<div class="tab-panel-main">
-				<ul class="tabs">
-					<li class="tab-link current" data-tab="Basic-detail">Détail</li>
-					<li class="tab-link" data-tab="Edu-detail">Scolarité</li>
-					<li class="tab-link" data-tab="Portfolio">Publication</li>
-					<li class="tab-link" data-tab="Parametre">Prametres</li>
-				</ul>
-				<div id="Basic-detail" class="tab-content current">
-					<div class="bio-box">
-						<div class="heading">
-							<p>Biographie</p>
-						</div>
-						<div class="desc">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-						</div>
-					</div>
-					<div class="detail-box">
-						<p>Détail</p>
-						<ul class="ul-first">
-							<li>Age</li>
-                            <li>Adresse</li>
-                            <li>Niveau</li>
-							<li>Téléphone</li>
-						</ul>
-						<ul class="ul-second">
-							<li>23 ans</li>
-                            <li>Guédiawaye</li>
-                            <li>Licence</li>
-							<li>77 396 90 61</li>
-						</ul>
-					</div>
-				</div>
-				<div id="Edu-detail" class="tab-content">
-					<div class="Edu-box-main">
-						 <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Scolarité</h2>
-						 <div class="Edu-box">
-						 	<h5><span>College</span> <br>
-						 		2014 | 2017</h5>
-						 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						 </div>
-						 <div class="Edu-box">
-						 	<h5><span>Lycée</span> <br>
-						 		2017 - 2019</h5>
-						 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						 </div>
-					</div>
-				</div>
-				<div id="Portfolio" class="tab-content">
-					<div class="portfolio-box">
-						<div class="portfolio-img-box">
-							<h3>Publication</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis quaerat odio.</p>
-						</div>
-						<div class="portfolio-img-box">
-							<h3>Publication</h3>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos asperiores quas temporibus.</p>
-						</div>
-						<div class="portfolio-img-box">
-							<h3>Publication</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorum expedita molestiae.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div style="clear: both;"></div>
-		<div class="footer">
-			<p><strong>Mes Badges</strong></p><br>
-			<div class="footer-box"><i class="fa fa-facebook"></i></div>
-			<div class="footer-box"><i class="fa fa-twitter"></i></div>
-			<div class="footer-box"><i class="fa fa-linkedin"></i></div>
-			<div class="footer-box"><i class="fa fa-google"></i></div>
-            <div class="footer-box"><i class="fa fa-instagram"></i></div>
-		</div>
-	</div>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="dist/img/rcss.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Forum | RC2S<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notifications.html">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Paramètres</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="update.html">Modifier</a>
+                <a class="dropdown-item" href="#">Deconnexion</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-success" style="font-weight: bold;">Nouvelle Discussion</button>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </nav>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('ul.tabs li').click(function(){
-				var tab_id = $(this).attr('data-tab');
+      <main role="main" class="container">
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-info rounded box-shadow">
+          <img class="mr-3" src="dist/img/rcss.png" alt="" width="48" height="48">
+          <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">Forum du Réseau des Clubs Scientifiques du Sénégal</h6>
+            <small>Promouvoir la Science pour un avenir meilleur !</small>
+          </div>
+        </div>
 
-				$('ul.tabs li').removeClass('current');
-				$('.tab-content').removeClass('current');
-
-				$(this).addClass('current');
-				$("#"+tab_id).addClass('current');
-			});
-		});
-	</script>
+      </main>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="dist/js/offcanvas.js"></script>
 </body>
 </html>
